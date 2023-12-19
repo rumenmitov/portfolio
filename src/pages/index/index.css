@@ -1,0 +1,145 @@
+#title {
+    text-align: center;
+    margin-top: 10svh;
+    font-size: 300%;
+}
+
+#center_title-card {
+    width: 100svw;
+    height: 90svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title-card {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary);
+}
+
+#title-card:hover {
+    box-shadow: 0px 0px 15px var(--primary);
+}
+
+#profile-pic {
+    width: 10svw;
+    aspect-ratio: 1 / 1;
+    box-shadow: 0px 0px 10px white;
+    border: 1px solid var(--background);
+    border-radius: 60svw;
+}
+
+#card-header {
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+#subtext {
+    font-size: 90%;
+    font-style: italic;
+}
+
+#more-info {
+    margin-top: 10%;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    width: 20%;
+    background: var(--background);
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    text-align: center;
+    text-decoration: none;
+}
+
+#more-info:hover {
+    box-shadow: 0px 0px 15px var(--primary);
+    background: var(--primary);
+    color: var(--background);
+    text-decoration: underline;
+}
+
+#showcase-header {
+    margin-bottom: 15svh;
+    padding-top: 10svh;
+    text-align: center;
+}
+
+#showcase {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+#tech-grid {
+    flex: 3 400px;
+}
+
+#tech-grid div {
+    margin-top: 10svh;
+    margin-bottom: 10svh;
+}
+
+#tech-grid h2 {
+    margin-bottom: 5svh;
+}
+
+#tech-grid img {
+    width: 15%;
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
+    mix-blend-mode: screen;
+}
+
+#card-holder {
+    flex: 1 200px;
+}
+
+#card-holder .card:nth-child(3n+1) {
+    transform: rotate(-15deg);
+    z-index: 0;
+}
+
+#card-holder .card:nth-child(3n+2) {
+    transform: rotate(15deg);
+    z-index: 1;
+}
+
+#card-holder .card:nth-child(3n) {
+    z-index: 2;
+}
+
+.card {
+    width: 70%;
+    height: 300px;
+    margin-left: 5%;
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    background: var(--background);
+}
+
+.card:hover {
+    box-shadow: 0px 0px 15px var(--accent);
+    z-index: 10;
+}
+
+.card .emoji {
+    text-align: center;
+    font-size: 50px;
+}
+
+.card h3 {
+    text-align: center;
+    font-size: 110%;
+}
+
+.card .project-desc {
+    width: 90%;
+    margin-left: 5%;
+    font-style: italic;
+}
+

@@ -1,0 +1,24 @@
+:root {
+    --text_color: #d4e2ff;
+    --background: #000917;
+    --primary: #78adff;
+    --secondary: #ac00a5;
+    --accent: #f9bada;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: var(--background);
+    color: var(--text_color);
+    font-size: 100%;
+}
+
+.cursor {
+    cursor: pointer;
+}
