@@ -1,7 +1,7 @@
 #title {
     text-align: center;
     margin-top: 10svh;
-    font-size: 300%;
+    font-size: 100px;
 }
 
 #center_title-card {
@@ -13,16 +13,13 @@
 }
 
 #title-card {
-    width: 50%;
-    min-width: 300px;
-    max-width: 800px;
-    height: 80%;
-    max-height: 600px;
+    width: 800px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--primary);
+    border: 0.2svh solid var(--primary);
 }
 
 #title-card:hover {
@@ -30,11 +27,10 @@
 }
 
 #profile-pic {
-    width: 10svw;
-    min-width: 70px;
+    width: 200px;
     aspect-ratio: 1 / 1;
-    box-shadow: 0px 0px 10px white;
-    border: 1px solid var(--background);
+    box-shadow: 0px 0px 15px white;
+    border: 0.1svh solid var(--background);
     border-radius: 60svw;
 }
 
@@ -42,23 +38,24 @@
     margin-top: 5%;
     margin-bottom: 0;
     text-align: center;
+    font-size: 50px;
 }
 
 #subtext {
-    font-size: 90%;
+    font-size: 30px;
     text-align: center;
     font-style: italic;
 }
 
 #more-info {
-    margin-top: 10%;
+    margin-top: 20px;
     padding-top: 3%;
     padding-bottom: 4%;
-    width: 20%;
-    min-width: 100px;
+    width: 200px;
     background: var(--background);
-    border: 2px solid var(--primary);
+    border: 0.2svh solid var(--primary);
     color: var(--primary);
+    font-size: 25px;
     text-align: center;
     text-decoration: none;
 }
@@ -74,16 +71,18 @@
     margin-bottom: 15svh;
     padding-top: 10svh;
     text-align: center;
+    font-size: 100px;
 }
 
 #showcase {
+    margin-bottom: 5svh;
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
 }
 
 #tech-grid {
-    flex: 3 400px;
+    flex: 3 700px;
 }
 
 #tech-grid div {
@@ -93,6 +92,7 @@
 
 #tech-grid h2 {
     margin-bottom: 5svh;
+    font-size: 60px;
 }
 
 #tech-grid img {
@@ -103,27 +103,30 @@
 }
 
 #card-holder {
-    flex: 1 200px;
+    flex: 1 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #card-holder .card:nth-child(3n+1) {
     transform: rotate(-15deg);
-    z-index: 0;
+    z-index: 1;
 }
 
 #card-holder .card:nth-child(3n+2) {
     transform: rotate(15deg);
-    z-index: 1;
-}
-
-#card-holder .card:nth-child(3n) {
     z-index: 2;
 }
 
+#card-holder .card:nth-child(3n) {
+    z-index: 3;
+}
+
 .card {
-    width: 70%;
-    height: 300px;
-    margin-left: 5%;
+    width: 250px;
+    height: 350px;
     border: 1px solid var(--accent);
     border-radius: 10px;
     background: var(--background);
@@ -131,7 +134,11 @@
 
 .card:hover {
     box-shadow: 0px 0px 15px var(--accent);
-    z-index: 10;
+}
+
+.card a {
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 .card .emoji {
@@ -150,3 +157,18 @@
     font-style: italic;
 }
 
+#center_contacts {
+    margin-top: 6svh;
+    margin-bottom: 4svh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#center_contacts a {
+    color: var(--primary);
+}
+
+#center_contacts a:hover {
+    text-shadow: 0px 0px 10px var(--primary);
+}
