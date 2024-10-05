@@ -95,7 +95,15 @@
     font-size: 200%;
 }
 
+#tech-grid div.images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 1svw;
+}
+
 #tech-grid img {
+    flex: 1;
     width: 15%;
     aspect-ratio: 3 / 2;
     object-fit: contain;
